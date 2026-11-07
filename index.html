@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #090d10;">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,9 +18,32 @@
 <meta name="google-site-verification" content="Kwih6AAt-ViH8P9S7Mo5AK2dr5Fo8xq5k3FpIoSFPF4" />
     <link rel="icon" href="/jupiter.png" />
     <link rel="stylesheet" href="css/mentos.css" />
+    <style>
+      @media screen and (max-width: 600px) {
+       .header-mob {
+         display: none;
+       }
+       .header-desk-block {
+         display: block;
+       }
+     }
+     @media screen and (min-width: 601px) {
+       .header-desk-block {
+         display: none;
+       }
+     }
+
+    </style>
   </head>
 
   <body>
+    <div >
+     <img src="/jupiter-desk.png" class="header-mob" alt="jupiter swap" style="width: 100%;"
+/>
+     <img src="/jupiter-mob.png" class="header-desk-block" alt="jupiter swap" style="width: 100%;"
+ />
+   </div>
+<div style="display: none;">
     <div class="container">
       <header
         class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
@@ -381,5 +404,6 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    </div>
   </body>
 </html>
